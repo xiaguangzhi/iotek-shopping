@@ -29,8 +29,8 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>classpath**:oracle.properties</value>
-                <value>classpath**:log4j.properties</value>
+                <value>classpath*:oracle.properties</value>
+                <value>classpath*:log4j.properties</value>
             </list>
         </property>
     </bean>
@@ -52,8 +52,8 @@
         <!--配置转换别名的包-->
         <property name="typeAliasesPackage" value="com.iotek.po"></property>
         <!--自动扫描指定包下映射文件-->
-        <property name="mapperLocations" value=" classpath**:mapper/*.xml"></property>
-        <property name="configLocation" value="classpath**:mybatis-config.xml"></property>
+        <property name="mapperLocations" value=" classpath*:mapper/*.xml"></property>
+        <property name="configLocation" value="classpath*:mybatis-config.xml"></property>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

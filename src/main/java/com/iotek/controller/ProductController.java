@@ -71,7 +71,7 @@ public class ProductController {
             @RequestParam("small_image") MultipartFile smallImage,
             @RequestParam("big_image") MultipartFile bigImage
     ){
-        Map<String,MultipartFile> images=new HashMap<>();
+        Map<String,MultipartFile> images=new HashMap<String,MultipartFile>();
         images.put("smallImage",smallImage);
         images.put("bigImage",bigImage);
         try {
