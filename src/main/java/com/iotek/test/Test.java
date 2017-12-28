@@ -1,19 +1,11 @@
 package com.iotek.test;
 
 
-import com.iotek.dao.CustomerDao;
+
 import com.iotek.po.*;
 import com.iotek.service.*;
-import com.iotek.service.impl.*;
-import com.sun.org.apache.xpath.internal.operations.Or;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 /**

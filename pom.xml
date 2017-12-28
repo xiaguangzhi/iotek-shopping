@@ -10,6 +10,14 @@
     <packaging>war</packaging>
     <name>hzm-shopping Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>GBK</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>aopalliance</groupId>
@@ -290,17 +298,28 @@
         </dependency>
 
 
-
-
-
-
-
-
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6_g</artifactId>
+            <version>11.2.0.4.0</version>
+        </dependency>
 
 
     </dependencies>
     <build>
         <finalName>hzm-shopping</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+        </plugins>
     </build>
 
 </project>
